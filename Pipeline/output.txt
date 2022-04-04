@@ -1,0 +1,245 @@
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_AHCG_FSRPNCW.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+Epoch 1/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_ANLM_BKGFJWL.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_AMFB_AITBKNH.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_AHCG_FSRPNCW.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_AKZI_AQCKYNV.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_ALBG_BSJRNLX.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Epoch 1: accuracy improved from -inf to 0.88000, saving model to checkpoint\cp.ckpt
+INFO:tensorflow:Assets written to: checkpoint\cp.ckpt\assets
+5/5 - 3s - loss: 1.1135 - accuracy: 0.8800 - 3s/epoch - 560ms/step
+Epoch 2/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\geri\geri_AHCG_MTPDJBN.wav
+word geri
+label geri
+number [[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\evet\evet_AHCG_YTRVPDK.wav
+word evet
+label evet
+number [[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ileri\ileri_BOKR_NGZWUFS.wav
+word ileri
+label ileri
+number [[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\baslat\baslat_AKZI_DIVQEBZ.wav
+word baslat
+label baslat
+number [[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\dur\dur_BOGH_KIJTMQV.wav
+word dur
+label dur
+number [[0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Epoch 2: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 153.4722 - accuracy: 0.0000e+00 - 531ms/epoch - 106ms/step
+Epoch 3/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\iptal\iptal_ARJY_IXDMVSZ.wav
+word iptal
+label iptal
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\yukari\yukari_AHCG_PNZSYBC.wav
+word yukari
+label yukari
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\evet\evet_CJPK_ZHMQVKN.wav
+word evet
+label evet
+number [[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\hayir\hayir_FJSE_UBPIZQS.wav
+word hayir
+label hayir
+number [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_ANLM_BKGFJWL.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Epoch 3: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 4.9160 - accuracy: 0.0000e+00 - 749ms/epoch - 150ms/step
+Epoch 4/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\asagi\asagi_ANLM_AVUNPHC.wav
+word asagi
+label asagi
+number [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\baslat\baslat_AHCG_MIDUYQE.wav
+word baslat
+label baslat
+number [[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\geri\geri_AMFB_OTASEGI.wav
+word geri
+label geri
+number [[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\hayir\hayir_EGSW_OEPVRGJ.wav
+word hayir
+label hayir
+number [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\devam\devam_AHCG_PCXTUIL.wav
+word devam
+label devam
+number [[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Epoch 4: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 4.3912 - accuracy: 0.0000e+00 - 781ms/epoch - 156ms/step
+Epoch 5/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\dur\dur_AVRM_NMCOJWE.wav
+word dur
+label dur
+number [[0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\evet\evet_ALBG_QMLCIXK.wav
+word evet
+label evet
+number [[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\hayir\hayir_EGSW_OEPVRGJ.wav
+word hayir
+label hayir
+number [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ileri\ileri_AXHC_HFBICNW.wav
+word ileri
+label ileri
+number [[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\yukari\yukari_DXWS_OUDQBZI.wav
+word yukari
+label yukari
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
+
+Epoch 5: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 2.6496 - accuracy: 0.0000e+00 - 916ms/epoch - 183ms/step
+Epoch 6/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ileri\ileri_BOKR_NGZWUFS.wav
+word ileri
+label ileri
+number [[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\iptal\iptal_ARJY_IXDMVSZ.wav
+word iptal
+label iptal
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\sol\sol_GKYU_PJQMLBE.wav
+word sol
+label sol
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\dur\dur_AHCG_TGJNPAD.wav
+word dur
+label dur
+number [[0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\sag\sag_AXHC_YEVHNZA.wav
+word sag
+label sag
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Epoch 6: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 2.6805 - accuracy: 0.0000e+00 - 1s/epoch - 248ms/step
+Epoch 7/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\geri\geri_AVRM_CVWGXSO.wav
+word geri
+label geri
+number [[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ileri\ileri_BOKR_NGZWUFS.wav
+word ileri
+label ileri
+number [[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\yukari\yukari_DXWS_OUDQBZI.wav
+word yukari
+label yukari
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\asagi\asagi_ANLM_AVUNPHC.wav
+word asagi
+label asagi
+number [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\sag\sag_ARJY_TGLHDVU.wav
+word sag
+label sag
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Epoch 7: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 2.5850 - accuracy: 0.0000e+00 - 1s/epoch - 253ms/step
+Epoch 8/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\dur\dur_ALBG_RFVKWQD.wav
+word dur
+label dur
+number [[0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\evet\evet_CJPK_ZHMQVKN.wav
+word evet
+label evet
+number [[0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\sol\sol_CLFS_XULFDSQ.wav
+word sol
+label sol
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\devam\devam_AURP_FBQTHEV.wav
+word devam
+label devam
+number [[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\devam\devam_ALBG_CFPRXLS.wav
+word devam
+label devam
+number [[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Epoch 8: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 2.6011 - accuracy: 0.4150 - 1s/epoch - 262ms/step
+Epoch 9/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\iptal\iptal_BKUQ_STNWEAJ.wav
+word iptal
+label iptal
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\sol\sol_AHCG_SMKQGTR.wav
+word sol
+label sol
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\baslat\baslat_ALBG_DWVNUZG.wav
+word baslat
+label baslat
+number [[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\ac\ac_ANLM_BKGFJWL.wav
+word ac
+label ac
+number [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\geri\geri_CADX_ARHDNIE.wav
+word geri
+label geri
+number [[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+
+Epoch 9: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 2.9878 - accuracy: 0.0000e+00 - 1s/epoch - 257ms/step
+Epoch 10/10
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\baslat\baslat_ANLM_AMPDFWN.wav
+word baslat
+label baslat
+number [[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\asagi\asagi_ALBG_ESWUQBO.wav
+word asagi
+label asagi
+number [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\hayir\hayir_GJME_HTWDEBP.wav
+word hayir
+label hayir
+number [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\asagi\asagi_AMFB_MSBFHKT.wav
+word asagi
+label asagi
+number [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+takendata C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database\dataset1\sag\sag_CJPK_SRLTPMF.wav
+word sag
+label sag
+number [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Epoch 10: accuracy did not improve from 0.88000
+5/5 - 1s - loss: 2.6446 - accuracy: 0.0000e+00 - 1s/epoch - 267ms/step
