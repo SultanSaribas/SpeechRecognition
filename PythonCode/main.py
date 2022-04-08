@@ -15,15 +15,15 @@ simplefilter(action='ignore', category=FutureWarning)
 def main():
 
     root_path="C:/Users/sarib/Desktop/Gohm/SpeechRecognition/database"
-    def get_paths(get_root_path, pathlist):
+    def get_paths(get_root_path, path_list):
         for root, directories, files in os.walk(get_root_path):
             for file_names in files:
                 if root is not get_root_path:
-                    pathlist.append(os.path.join(root,file_names))
+                    path_list.append(os.path.join(root,file_names))
 
     allpaths=[]
     #GET ALL PATHS INTO ARRAY
-    get_paths(get_root_path=root_path, pathlist=allpaths)
+    get_paths(get_root_path=root_path, path_list=allpaths)
     #ASSIGN THE ARRAY INTO DATAFRAME TO BE ABLE TO SPLIT
     dataframe= pd.DataFrame(allpaths, columns=["paths"])
     np.random.shuffle(dataframe.values)
@@ -44,19 +44,19 @@ def main():
     #CREATE MODEL
     model= Model.create_model()
     print("Training the data!...")
-    checkpointpath="PythonCode/checkpoint/cp.ckpt"
-    checkpointer = ModelCheckpoint(checkpointpath, monitor='val_accuracy',
-                                verbose=2, save_best_only=True, mode='max')
+    checkpoint_path="PythonCode/checkpoint/cp.ckpt"
+    checkpointer = ModelCheckpoint(checkpoint_path, monitor='val_accuracy',
+                                verbose=2, save_best_only=True, save_weights_only=True, mode='max')
     early_stop = EarlyStopping(monitor='val_accuracy', patience=2, verbose=2)
-    callbackList= [checkpointer, early_stop]
-    model.fit(train_prefit, validation_data=valid_prefit, steps_per_epoch=5, epochs=200, callbacks=[callbackList], verbose=2)
+    callback_list= [checkpointer, early_stop]
+    model.fit(train_prefit, validation_data=valid_prefit, steps_per_epoch=5, epochs=200, callbacks=[callback_list], verbose=2)
 
     #EVALUATE
-    print("The accuray result!.....")
+    print("The accuracy result!.....")
     print("Test Score: ", model.evaluate(test_prefit, verbose=2))
 
     ###TRANSFER LEARNING###
-    machine_learning=Machine_Learning(model, checkpointpath, "C:/Users/sarib/Desktop/Gohm/SpeechRecognition/RecordsFromDataset")
+    machine_learning=Machine_Learning(model, os.path.join("C:/Users/sarib/Desktop/Gohm/SpeechRecognition/",checkpoint_path), "C:/Users/sarib/Desktop/Gohm/SpeechRecognition/RecordsFromDataset")
     machine_learning.transfer_learning()
 
     ####ADD SECOND DATASET####
@@ -65,6 +65,7 @@ def main():
     get_paths("C:/Users/sarib/Desktop/Gohm/SpeechRecognition/RecordsFromDataset",second_data_paths)
     second_data_prefit=Pipeline(second_data_paths)
     history2=model.fit(second_data_prefit, validation_data=valid_prefit, epochs=50, callbacks=[early_stop], verbose=2)
+    
     #EVALUATE
     print("Accuracy after data added!...")
     print("Test Score: ", model.evaluate(test_prefit, verbose=2))

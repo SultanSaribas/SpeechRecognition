@@ -30,7 +30,7 @@ class Pipeline(tf.keras.utils.Sequence):
         self.shuffle=True
         self.paths=path
         
-    def __mfcc_extractor(self,file):
+    def mfcc_extractor(self,file):
         signal, sample_rate = librosa.load(file)
         ipd.Audio(file)
         mfccs_features = librosa.feature.mfcc(y=signal, sr=sample_rate, n_mfcc=40)
@@ -40,7 +40,7 @@ class Pipeline(tf.keras.utils.Sequence):
 
     def __getitem__(self, index):
         #GET MFCC FETAURES FOR EACH PATH(AUDIO)
-        data = self.__mfcc_extractor(self.paths[index])/10
+        data = self.mfcc_extractor(self.paths[index])/10
         #GET THE LABEL FOR EACH PATH(AUDIO)
         labelY=os.path.basename(os.path.dirname(self.paths[index]))
         #IMPORT DATA TO DATAFRAME

@@ -3,8 +3,9 @@ from tensorflow.keras.layers import Dense,Dropout,Activation,Flatten
 from tensorflow.keras.optimizers import Adam
 
 class Model():
-    print("Creating Model...")
+    
     def __init__(self):
+        print("Creating Model...")
         pass
 
     def create_model():
