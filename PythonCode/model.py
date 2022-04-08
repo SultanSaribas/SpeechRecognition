@@ -1,4 +1,3 @@
-from pyexpat import model
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense,Dropout,Activation,Flatten
 from tensorflow.keras.optimizers import Adam

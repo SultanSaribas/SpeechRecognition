@@ -1,12 +1,16 @@
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-from tensorflow.keras.optimizers import Adam
 from machine_learning import Machine_Learning
 from pipeline import Pipeline
-import matplotlib as plt
 from model import Model
-import pandas as pd
-import numpy as np
-import os
+from warnings import simplefilter
+import absl.logging
+
+absl.logging.set_verbosity(absl.logging.ERROR)
+simplefilter(action='ignore', category=FutureWarning)
 
 def main():
 
@@ -40,31 +44,35 @@ def main():
     #CREATE MODEL
     model= Model.create_model()
     print("Training the data!...")
-    checkpointpath="checkpoint/cp.ckpt"
+    checkpointpath="PythonCode/checkpoint/cp.ckpt"
     checkpointer = ModelCheckpoint(checkpointpath, monitor='val_accuracy',
                                 verbose=2, save_best_only=True, mode='max')
-    early_stop = EarlyStopping(monitor='val_accuracy', patience=10, verbose=2)
+    early_stop = EarlyStopping(monitor='val_accuracy', patience=2, verbose=2)
     callbackList= [checkpointer, early_stop]
-    history=model.fit(train_prefit, validation_data=valid_prefit, epochs=200, callbacks=[callbackList], verbose=2)
+    model.fit(train_prefit, validation_data=valid_prefit, steps_per_epoch=5, epochs=200, callbacks=[callbackList], verbose=2)
 
     #EVALUATE
-    print("Test Score: ", Model.evaluate(test_prefit))
-    #PLOT THE ACCURACY VALUES
-    print("Plotting the accuracy values")
-    plt.plot(history.history['accuracy'], label='train')
-    plt.plot(history.history['val_accuracy'], label = 'test')
-    plt.xlabel('Epoch')
-    plt.ylabel('Accuracy')
-    plt.ylim([0, 1])
-    plt.legend(loc='lower right')
-    plt.title("1")
+    print("The accuray result!.....")
+    print("Test Score: ", model.evaluate(test_prefit, verbose=2))
 
-      ####ADD SECOND DATASET####
-    second_data_paths=get_paths("C:/Users/sarib/Desktop/Gohm/SpeechRecognition/RecordsFromDataset")
+    ###TRANSFER LEARNING###
+    machine_learning=Machine_Learning(model, checkpointpath, "C:/Users/sarib/Desktop/Gohm/SpeechRecognition/RecordsFromDataset")
+    machine_learning.transfer_learning()
+
+    ####ADD SECOND DATASET####
+    print("Adding the second dataset!...")
+    second_data_paths=[]
+    get_paths("C:/Users/sarib/Desktop/Gohm/SpeechRecognition/RecordsFromDataset",second_data_paths)
     second_data_prefit=Pipeline(second_data_paths)
     history2=model.fit(second_data_prefit, validation_data=valid_prefit, epochs=50, callbacks=[early_stop], verbose=2)
     #EVALUATE
-    print("Test Score: ", model.evaluate(test_prefit))
+    print("Accuracy after data added!...")
+    print("Test Score: ", model.evaluate(test_prefit, verbose=2))
+  
+    #PREDICTION
+    print("Prediction Results!....")
+    machine_learning.prediction()
+
     #PLOT THE ACCURACY VALUES
     print("Plotting the accuracy values")
     plt.plot(history2.history['accuracy'], label='train')
@@ -73,10 +81,9 @@ def main():
     plt.ylabel('Accuracy')
     plt.ylim([0, 1])
     plt.legend(loc='lower right')
-    plt.title("1")
+    plt.title("2")
+    plt.show()
 
-    #PREDICTION
-    Machine_Learning(model, checkpointpath,"C:/Users/sarib/Desktop/Gohm/SpeechRecognition/Records")
 
 if __name__== "__main__" :
     main()

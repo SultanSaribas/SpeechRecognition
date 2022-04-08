@@ -1,22 +1,26 @@
-from pipeline import Pipeline
-import IPython.display as ipd
+import os
 import pandas as pd
 import numpy as np
 import librosa
-import os
+import IPython.display as ipd
+from pipeline import Pipeline
 
-class Machine_Learning():
+
+class Machine_Learning(object):
+        print("Enter to Machine Learning")
         inverse_worddict=dict((v, k) for k, v in Pipeline.worddict.items())
+
         def __init__(self, model, weight_path, prediction_path):
             self.model=model
             self.weight_path=weight_path
             self.prediction_path=prediction_path
         
         def transfer_learning(self):
-            self.model.load_weights(self.weight_path)
+            print("loading weigth")
+            return self.model.load_weights(self.weight_path)
 
         #PREDICTION
-        def mfcc_extractor(file):
+        def mfcc_extractor(self, file):
                 signal, sample_rate = librosa.load(file)
                 ipd.Audio(file)
                 mfccs_features = librosa.feature.mfcc(y=signal, sr=sample_rate, n_mfcc=40)
@@ -24,7 +28,8 @@ class Machine_Learning():
                 
                 return mfccs_scaled_features
 
-        def prediction(self):   
+        def prediction(self):
+            print("Enter to Prediction")   
             predictiondata_feataures =[]
             counter_true=0
             for root, directories, files in os.walk(self.prediction_path): 
@@ -41,4 +46,5 @@ class Machine_Learning():
             predictiondata_feataures_dataframe= pd.DataFrame(predictiondata_feataures, columns=["actual data", "predicted data", "predicted label"])
             percentage= (counter_true/len(predictiondata_feataures))*100
             print("The percantage of the true predicted data: ", percentage,"%")
-            return predictiondata_feataures_dataframe
+            print(predictiondata_feataures_dataframe)
+            

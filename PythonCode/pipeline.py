@@ -1,10 +1,11 @@
-import IPython.display as ipd
-import tensorflow as tf
+import os
 import pandas as pd
 import numpy as np
-import librosa
+import IPython.display as ipd
+import tensorflow as tf
 from tensorflow import keras
-import os
+import librosa
+
 
 class Pipeline(tf.keras.utils.Sequence):
     worddict = {
